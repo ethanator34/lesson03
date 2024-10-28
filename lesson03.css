@@ -31,39 +31,61 @@ div {
 	background-color:hsla(200,100%,30%,.5); 
 }
 /* Box Model Styles Go Here */
-div:nth-of-type(1){
+ div:nth-of-type(1){
 	width: 100%;
+	
 }
 div:nth-of-type(2){
 	width: 460px;
-	padding: 20px;
-}
+	/* padding: 20px; */
+} 
 /* This rule is for floated elements */
 .floatedElements div{
-	float: left;
-	width: 30%;
-	padding: 3%;
-	display: flex;
-	/* margin:0 6px; */
-	/* box-sizing:border-box; */
-	/* flex: 1; */
+	width: 140px;
+	padding: 20px;
+	margin: 10px;
+	text-align: center;
+	box-sizing:border-box;
+	background-color: hsla(62, 90%, 64%, 0.993);
 }
-.floatedElements div:nth-of-type(odd) {
-    margin-left: 10px;
+ .floatedElements div:nth-of-type(odd) {
+	margin-left: 10px; 
     margin-right: 10px;
-}
-/* .floatedElements{
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	flex-wrap: wrap;
-} */
- .flow{
-	display: flex;
+} 
+
+/* 
+THESE are the flexboxes in part 2 */
+
+.flow {
+	display:flex;
 	flex-direction: row;
-	flex: 1;
-	width: 600px;
- }
+	gap: 1em;
+}
+.flow2{
+	flex:1;
+	width:140px;
+	padding:20px;
+	background-color: #63fb70;
+	border: 2px solid #000000;
+	text-align: center;
+}
+@media (max-width: 600px) {
+	.flow {
+		display:flex;
+		flex-direction: column;
+		gap: 1em;
+	}
+	.flow2{
+		flex:1;
+		width:140px;
+		padding:20px;
+		background-color: #63fb70;
+		border: 2px solid #000000;
+		text-align: center;
+	}
+}
+
+
 
 article:after {
     visibility: hidden;
