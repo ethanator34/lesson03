@@ -1,69 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="lesson03.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Box Model</title>
-<style>
-* {
-	margin: 0;
-	padding: 0;
-}
-body {  
-    background-color: #ccc;
-	border-radius:8px;
-    margin: 1em auto; 
-    width: 500px; 
-	font-family: "Helvetica Neue","Helvetica", sans-serif;
-}
-article {
-    padding: 20px;
-    background-color:#fff;
-    background: url(images/bg2.png);
-}
-h1 {
-	background: #42403E;
-	text-align: center;
-	line-height: 75px;
-	color: white;
-}
-p {
-	margin:0 0 1em 0;
-}
-div {
-    border: 2px solid #000;
-	margin-bottom:16px;
-	background-color:hsla(200,100%,30%,.5); 
-}
-/* Box Model Styles Go Here */
-
-
-
-article:after {
-    visibility: hidden;
-    display:block;
-    content: " ";
-    clear:both;
-    height:0;
-}
-
-footer {
-	background: #42403E;
-	padding: 10px 0;
-	color: white;
-	text-align: center;
-	border-radius: 0 0 8px 8px;
-}
-footer p { 
-	margin-bottom:0;
-}
-#box { 
-    background-color:hsla(200,100%,30%,.5); 
-    border: 5px solid #000;
-    margin-bottom: 0;
-}
-</style>
+    <title>The Box Model</title>
 </head>
 
 <body>
